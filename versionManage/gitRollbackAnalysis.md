@@ -1,7 +1,7 @@
 ## 从HEAD指针理解git和它的回退操作
 ### 从HEAD说起
 
-![76b4be67-1cef-4b00-9f9c-604ce9b8489a](media/15108304297211/76b4be67-1cef-4b00-9f9c-604ce9b8489a.png)
+![76b4be67-1cef-4b00-9f9c-604ce9b8489a](../image/branch.png)
     上图为是一张git分支示例图，图中HEAD指向feature分支，说明当前所在分支为feature，简单来说就是：`你现在在哪儿，HEAD 就指向哪儿，所以 Git 才知道你在那儿`。但是HEAD指向的不一定是分支，也可能指向一个commit。这个应该怎么理解呢？
     
 参考[what-is-head-in-git](http://stackoverflow.com/questions/2304087/what-is-head-in-git )，我们可以查看.git/HEAD 文件，它保存了当前的分支
@@ -41,7 +41,7 @@ echo 'hello world' | git hash-object --stdin
 ```
 
 将文件的sha-1值作为文件的唯一 id，每个版本存储的只是物理文件的快照也就是通过sha-1计算出来的hash作为的索引值。
-![quick](media/15108304297211/quick.png)
+![quick](../image/quick.png)
 
 git存储的文件结构抽象为4种类型：blob、tree、commit、tag。
 
